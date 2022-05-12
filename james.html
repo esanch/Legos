@@ -3,6 +3,9 @@
   <head>
     <title>J|A|G Lego</title>
   <style>
+  function need(){
+let jamesNeed = $("#sel option:selected").val();
+}
   
 * {
   box-sizing: border-box;
@@ -26,11 +29,46 @@
 div {
   padding: 40px;
 }
+
+
+
+var click = document.getElementById('submit');
+click.addEventListener('click', addData);
+
+var arr = new Array();
+
+function addData(){
+    DeleteData();
+    getData();
+    var cv = document.getElementById('weight').value;
+    cv = parseInt(100) + parseInt(cv);
+    document.getElementById('weight').value = cv;
+    arr.push({
+        animalNeed:document.getElementById('animalNeed').value
+    });
+
+        localStorage.setItem("localData", JSON.stringify(arr));
+}
+
+function getData(){
+    var str = localStorage.getItem("localData");
+    if (str!= null)
+        arr = JSON.parse(str);
+}
+
+function DeleteData(){
+localStorage.clear();
+}
+
+
+
+
 </style>
     </head>
 
 
   <body style="background-color:lavender;">
+  <form action="/list" method="post" id="myForm">
       <div class="row">
   <div class="column">
      <p1>
@@ -39,13 +77,13 @@ div {
       <a href="https://www.lego.com/en-gb/product/wild-animals-of-the-world-10975">Wild Animals of the World</a>
       <h4><b>Price:</b> £114.99</h4>
       <h5>James enjoys Animal Lego</h5>
-	    <select name="plan" id="plan">
-		    <option value="none" selected disabled hidden>Do he NEED it?</option>
+	    <select class="form-control " name="animalNeed" id="living_in_groups">
+                    <option value="none" selected disabled hidden>Do he NEED it?</option>
 		    <option value="yes">Yes</option>
 		    <option value="maybe">Maybe </option>
 		    <option value="no">No</option>
-	    </select>
-
+                </select>
+<button type="submit" class="btn btn-primary btn-block" id="submit">Submit</button>
     </p1>
   </div>
   <div class="column">
@@ -102,5 +140,6 @@ div {
 		  </p1>
   </div>
 </div>
+</form>
   </body>
 </html>
