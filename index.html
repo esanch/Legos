@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JAG Lego</title>
-  </head>
+    <title>J|A|G Lego</title>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+    </head>
+
+
   <body style="background-color:lavender;">
-	  <form action="/saved.php">	  
-    <p1>
+      <div class="row">
+  <div class="column">
+     <p1>
       <img src="images/goofy.png" alt="Goofy set" width="300" height="222">
 	<br>
       <a href="https://www.lego.com/en-gb/product/mickey-minnie-and-goofy-s-fairground-fun-10778">Mickey, Minnie and Goofy's Fairground Fun</a>
@@ -19,8 +42,9 @@
 	    </select>
 
     </p1>
-		  <br>
-    <p1>
+  </div>
+  <div class="column">
+     <p1>
 	    <img src="images/pluto.png" alt="Pluto set" width="300" height="222">
 	<br>
       <a href="https://www.lego.com/en-gb/product/mickey-mouse-and-minnie-mouse-s-camping-trip-10777">Mickey Mouse and Minnie Mouse's Camping Trip</a>
@@ -34,9 +58,7 @@
 	    </select>
 	    
 		  </p1>
-		  <br>
-		    
-	     <input type="submit" value="Update">
-</form>
+  </div>
+</div>
   </body>
 </html>
