@@ -8,12 +8,15 @@
   box-sizing: border-box;
 }
 
+/* Create two equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
   padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -31,13 +34,13 @@ div {
       <div class="row">
   <div class="column">
      <p1>
-      <img src="images/goofy.png" alt="Goofy set" width="300" height="222">
+      <img src="images/wildAnimals.png" alt="Animal set" width="300" height="222">
 	<br>
-      <a href="https://www.lego.com/en-gb/product/mickey-minnie-and-goofy-s-fairground-fun-10778">Mickey, Minnie and Goofy's Fairground Fun</a>
-      <h4><b>Price:</b> £24.99</h4>
-      <h5>Set includes Goofy in it. <br>Note: We do have Goofy as a keychain Lego already</h5>
+      <a href="https://www.lego.com/en-gb/product/wild-animals-of-the-world-10975">Wild Animals of the World</a>
+      <h4><b>Price:</b> £114.99</h4>
+      <h5>James enjoys Animal Lego</h5>
 	    <select name="plan" id="plan">
-		    <option value="none" selected disabled hidden>Do we NEED it?</option>
+		    <option value="none" selected disabled hidden>Do he NEED it?</option>
 		    <option value="yes">Yes</option>
 		    <option value="maybe">Maybe </option>
 		    <option value="no">No</option>
@@ -47,13 +50,50 @@ div {
   </div>
   <div class="column">
      <p1>
-	    <img src="images/pluto.png" alt="Pluto set" width="300" height="222">
+	    <img src="images/farm.png" alt="Farm set" width="300" height="222">
 	<br>
-      <a href="https://www.lego.com/en-gb/product/mickey-mouse-and-minnie-mouse-s-camping-trip-10777">Mickey Mouse and Minnie Mouse's Camping Trip</a>
-      <h4><b>Price:</b> £17.99</h4>
-      <h5>Set includes Pluto for Disney Castle set</h5>
+      <a href="https://www.lego.com/en-gb/product/barn-farm-animals-60346">Barn & Farm Animals
+</a>
+      <h4><b>Price:</b> £44.99</h4>
+      <h5>Set includes farm animals, smaller than Duplo pieces<br>Note: This is for 4+ so might be too complex</h5>
 	    <select name="plan" id="plan">
-		    <option value="none" selected disabled hidden>Do we NEED it?</option>
+		    <option value="none" selected disabled hidden>Do he NEED it?</option>
+		    <option value="yes">Yes</option>
+		    <option value="maybe">Maybe </option>
+		    <option value="no">No</option>
+	    </select>
+	    
+		  </p1>
+  </div>
+</div>
+<br>
+      <div class="row">
+<div class="column">
+     <p1>
+	    <img src="images/owen.png" alt="Trex set" width="300" height="222">
+	<br>
+      <a href="https://www.lego.com/en-gb/product/t-rex-and-triceratops-dinosaur-breakout-10939">T. rex and Triceratops Dinosaur Breakout</a>
+      <h4><b>Price:</b> £24.99</h4>
+      <h5>Want to build a Jurassic playset with this one</h5>
+	    <select name="plan" id="plan">
+		    <option value="none" selected disabled hidden>Do he NEED it?</option>
+		    <option value="yes">Yes</option>
+		    <option value="maybe">Maybe </option>
+		    <option value="no">No</option>
+	    </select>
+	    
+		  </p1>
+  </div>
+  
+  <div class="column">
+     <p1>
+	    <img src="images/claire.png" alt="Nursery set" width="300" height="222">
+	<br>
+      <a href="https://www.lego.com/en-gb/product/dinosaur-nursery-10938">Dinosaur Nursery</a>
+      <h4><b>Price:</b> £17.99</h4>
+      <h5>Includes more dinos for the Jurassic playset</h5>
+	    <select name="plan" id="plan">
+		    <option value="none" selected disabled hidden>Do he NEED it?</option>
 		    <option value="yes">Yes</option>
 		    <option value="maybe">Maybe </option>
 		    <option value="no">No</option>
