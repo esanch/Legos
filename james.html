@@ -44,7 +44,7 @@ function addData(){
     cv = parseInt(100) + parseInt(cv);
     document.getElementById('weight').value = cv;
     arr.push({
-        animalNeed:document.getElementById('animalNeed').value
+        jamesNeed:document.getElementById('jamesNeed').value
     });
 
         localStorage.setItem("localData", JSON.stringify(arr));
@@ -77,7 +77,7 @@ localStorage.clear();
       <a href="https://www.lego.com/en-gb/product/wild-animals-of-the-world-10975">Wild Animals of the World</a>
       <h4><b>Price:</b> £114.99</h4>
       <h5>James enjoys Animal Lego</h5>
-	    <select class="form-control " name="animalNeed" id="living_in_groups">
+	    <select class="form-control " name="jamesNeed" id="jamesNeed">
                     <option value="none" selected disabled hidden>Do he NEED it?</option>
 		    <option value="yes">Yes</option>
 		    <option value="maybe">Maybe </option>
