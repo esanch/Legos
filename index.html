@@ -3,84 +3,30 @@
   <head>
     <title>J|A|G Lego</title>
   <style>
-  
-* {
-  box-sizing: border-box;
-}
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-div {
-  padding: 40px;
-}
 </style>
     </head>
+<body>
+<h3>Choose a user to view</h3>
 
-
-  <body style="background-color:lavender;">
-      <div class="row">
-  <div class="column">
-     <p1>
-      <img src="images/goofy.png" alt="Goofy set" width="300" height="222">
-	<br>
-      <a href="https://www.lego.com/en-gb/product/mickey-minnie-and-goofy-s-fairground-fun-10778">Mickey, Minnie and Goofy's Fairground Fun</a>
-      <h4><b>Price:</b> £24.99</h4>
-      <h5>Set includes Goofy in it. <br>Note: We do have Goofy as a keychain Lego already</h5>
-	    <select name="plan" id="plan">
-		    <option value="none" selected disabled hidden>Do we NEED it?</option>
-		    <option value="yes">Yes</option>
-		    <option value="maybe">Maybe </option>
-		    <option value="no">No</option>
-	    </select>
-
-    </p1>
-  </div>
-  <div class="column">
-     <p1>
-	    <img src="images/pluto.png" alt="Pluto set" width="300" height="222">
-	<br>
-      <a href="https://www.lego.com/en-gb/product/mickey-mouse-and-minnie-mouse-s-camping-trip-10777">Mickey Mouse and Minnie Mouse's Camping Trip</a>
-      <h4><b>Price:</b> £17.99</h4>
-      <h5>Set includes Pluto for Disney Castle set</h5>
-	    <select name="plan" id="plan">
-		    <option value="none" selected disabled hidden>Do we NEED it?</option>
-		    <option value="yes">Yes</option>
-		    <option value="maybe">Maybe </option>
-		    <option value="no">No</option>
-	    </select>
-	    
-		  </p1>
-  </div>
-</div>
+<button onclick="james()">James</button>
 <br>
-      <div class="row">
-<div class="column">
-     <p1>
-	    <img src="images/whiteBox.png" alt="Pluto set" width="300" height="222">
-	<br>
-      <a href="https://www.lego.com/en-gb/product/8-stud-desk-drawer-white-5006877">8-Stud Desk Drawer – White</a>
-      <h4><b>Price:</b> £24.99</h4>
-      <h5>I like these drawer version versus the top being pulled up for the coffee table
-<br>*They also have some with two drawers instead of just one big one*</h5>
-	    <select name="plan" id="plan">
-		    <option value="none" selected disabled hidden>Do we NEED it?</option>
-		    <option value="yes">Yes</option>
-		    <option value="maybe">Maybe </option>
-		    <option value="no">No</option>
-	    </select>
-	    
-		  </p1>
-  </div>
-</div>
-  </body>
-</html>
+<button onclick="both()">A&amp;G</button>
+<br>
+<button onclick="home()">Home</button>
+
+
+<script>
+function james() {
+  location.replace("https://esanch.github.io/Legos/james")
+}
+function both() {
+  location.replace("https://esanch.github.io/Legos/AG")
+}
+function home() {
+  location.replace("https://esanch.github.io/Legos/home")
+}</script>
+
+</body>
+</html> 
+
