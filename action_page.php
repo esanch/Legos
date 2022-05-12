@@ -3,7 +3,7 @@
 <html>
 <body>
 
-<?php
+<?php echo
 ?> 
 
 </body>
