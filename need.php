@@ -1,6 +1,5 @@
 <html>
 <body>
-
- <?php echo $_POST["animalNeed"]; ?> we need it<br>
+Do we need it: <?php echo $_GET["animalNeed"]; ?><br>
 </body>
 </html>
