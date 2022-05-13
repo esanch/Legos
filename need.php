@@ -1,6 +1,6 @@
 <html>
 <body>
 
- <?php echo $_GET["animalNeed"]; ?> we need it<br>
+ <?php echo $_POST["animalNeed"]; ?> we need it<br>
 </body>
 </html>
