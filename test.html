@@ -43,26 +43,30 @@
 
 
 
-
 <!DOCTYPE html>
 <html>
 <body>
 
-<form action="https://esanch.github.io/Legos/need.php">
-<div>
-        <label for="color">Background Color:</label>
-        <select name="color" id="color">
-            <option value="">--- Choose a color ---</option>
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+    <div>
+        <label for="colors">Background Color:</label>
+        <select name="colors[]" id="colors" multiple>
             <option value="red">Red</option>
-            <option value="green" selected>Green</option>
+            <option value="green">Green</option>
             <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+            <option value="magenta">Magenta</option>
+            <option value="cyan">Cyan</option>
         </select>
     </div>
     <div>
-        <button type="submit">Select</button>
+        <button type="submit">Submit</button>
     </div>
 </form>
+
 </body>
 </html>
+
+
 
 
