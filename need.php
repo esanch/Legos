@@ -1,5 +1,5 @@
 <html>
 <body>
-Do we need it: <?php echo $_GET["animalNeed"]; ?><br>
+Do we need it: <?php echo $_GET["color"]; ?><br>
 </body>
 </html>
